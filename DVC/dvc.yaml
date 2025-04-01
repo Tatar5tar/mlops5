@@ -1,0 +1,11 @@
+stages:
+  preprocess:
+    cmd: python scripts/Pipe.py
+    deps:
+      - data/mall_customers.csv
+      - scripts/Pipe.py
+    outs:
+      - data/clean_mall_customers.csv
+      - data/features_mall_customers.csv
+    metrics:
+      - metrics/metrics.json

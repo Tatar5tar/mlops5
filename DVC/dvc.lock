@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python scripts/Pipe.py
+    deps:
+    - path: data/mall_customers.csv
+      hash: md5
+      md5: 583ec95c3db05c720ee18fd8d9b0106a
+      size: 4286
+    - path: scripts/Pipe.py
+      hash: md5
+      md5: 455428a8fb854c5231622642d6e57e4d
+      size: 725
+    outs:
+    - path: data/clean_mall_customers.csv
+      hash: md5
+      md5: e22ae2e65fcf5b7b8a4d80b8ab486e4b
+      size: 3980
+    - path: data/features_mall_customers.csv
+      hash: md5
+      md5: 8a31dd6eaf0520e87b8bf512dd10e857
+      size: 7137
+    - path: metrics/metrics.json
+      hash: md5
+      md5: 8f9f60f3dc2cb0baa8079b2a9162a618
+      size: 98
+    - path: model/model.pkl
+      hash: md5
+      md5: b6df45463986792719a1c6b8731452e6
+      size: 772929
