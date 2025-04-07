@@ -6,12 +6,12 @@ from Train_model import train_model
 from Eval_model import eval_model
 
 
-RAW_DATA_PATH = "data/mall_customers.csv"
-CLEAN_DATA_PATH = "data/clean_mall_customers.csv"
-FEATURES_DATA_PATH = "data/features_mall_customers.csv"
-MODEL_PATH = "model/model.pkl"
-MODEL_PATH_TEMP = "model/model_step_{step}.pkl"
-METRICS_PATH = "metrics/metrics.json"
+RAW_DATA_PATH = "../data/mall_customers.csv"
+CLEAN_DATA_PATH = "../data/clean_mall_customers.csv"
+FEATURES_DATA_PATH = "../data/features_mall_customers.csv"
+MODEL_PATH = "../model/model.pkl"
+MODEL_PATH_TEMP = "../model/model_step_{step}.pkl"
+METRICS_PATH = "../metrics/metrics.json"
 
 
 if __name__ == "__main__":
